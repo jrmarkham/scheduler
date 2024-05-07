@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 // Package imports:
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:scheduler/src/ui/screens/appointment.dart';
-import 'package:scheduler/src/ui/screens/schedule.dart';
+import 'package:scheduler/src/ui/screens/scheduler.dart';
 
 import 'data/blocs/navigation/navigation_cubit.dart';
 import 'data/blocs/shared_preferences/shared_preferences_cubit.dart';
@@ -39,7 +39,7 @@ class CoreApp extends StatelessWidget {
         routes: {
           '/': (context) => const Home(),
           '/provider': (context) => const Provider(),
-          '/scheduler': (context) => const Schedule(),
+          '/scheduler': (context) => const Scheduler(),
           '/appointment': (context) => const Appointment(),
           '/client': (context) => const Client()
         },

@@ -12,8 +12,8 @@ import '../../globals/navigation_enum.dart';
 import '../scaffold/core_scaffold.dart';
 import '../widgets/buttons.dart';
 
-class Schedule extends StatelessWidget {
-  const Schedule({super.key});
+class Scheduler extends StatelessWidget {
+  const Scheduler({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -66,9 +66,8 @@ class Schedule extends StatelessWidget {
                     const SizedBox(
                       height: 15,
                     ),
-
                     if (appointments.isNotEmpty) ...[
-                      const Text('View Appointments'),
+                      const Text('Appointments'),
                       Flexible(
                         child: ListView.builder(
                             shrinkWrap: true,
@@ -88,11 +87,10 @@ class Schedule extends StatelessWidget {
                             }),
                       ),
                     ],
-
                     const SizedBox(
                       height: 15,
                     ),
-                    // Text(dateState != null ? 'Change Date' : 'Select Date'),
+                    const Text('Select Date'),
                     DateTimePicker(
                       type: DateTimePickerType.date,
                       initialValue: firstDate.toString(),
