@@ -1,7 +1,7 @@
 # Scheduler
 
 Design:
-I am particular about the DDD design pattern. It makes sense to me for Flutter development. Where the data is at the top of the hierarchy and the UI is mostly composed of Stateless widgets. For state management I used Blocs (Cubits specifically); this fits well into DDD architecture and Cubits are very light.
+I am particular about the DDD (Domain-Driven Design) design pattern. It makes sense to me for Flutter development. Where the data is at the top of the hierarchy and the UI is mostly composed of Stateless widgets. For state management I used Blocs (Cubits specifically); this fits well into DDD architecture and Cubits are very light.
 
 Data:
 For data I wanted to use something real without using much time, so I used SharedPreferences which saves data on the device. This didn't take much longer than using mock data.
