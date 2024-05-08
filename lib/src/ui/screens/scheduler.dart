@@ -12,6 +12,9 @@ import '../../globals/navigation_enum.dart';
 import '../scaffold/core_scaffold.dart';
 import '../widgets/buttons.dart';
 
+const Duration nextDay = Duration(days: 1);
+const Duration eightDay = Duration(days: 8);
+
 class Scheduler extends StatelessWidget {
   const Scheduler({super.key});
 
@@ -23,9 +26,9 @@ class Scheduler extends StatelessWidget {
     DateSelectorCubit dateSelectorCubit = DateSelectorCubit();
 
     //set dates to next day and week ahead
-    final DateTime firstDate = DateTime.now().add(Duration(days: 1));
+    final DateTime firstDate = DateTime.now().add(nextDay);
 
-    final DateTime lastDate = DateTime.now().add(Duration(days: 8));
+    final DateTime lastDate = DateTime.now().add(eightDay);
     void goToHomeScreen() => navigationCubit.navigate(NavigationEnum.home);
     void goToProviderScreen() => navigationCubit.navigate(NavigationEnum.provider);
     // date + timestart + int//

@@ -43,7 +43,7 @@ class Appointment extends StatelessWidget {
                   ),
                 ],
               ),
-              Text('View and Make Appointments'),
+              const Text('View and Make Appointments'),
               BlocBuilder<SharedPreferencesCubit, SharedPreferencesState>(
                   bloc: sharedPreferencesCubit,
                   builder: (BuildContext context, SharedPreferencesState state) {
