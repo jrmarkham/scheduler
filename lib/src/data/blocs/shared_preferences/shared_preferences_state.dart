@@ -24,8 +24,11 @@ enum TimeslotStatus {
   }
 }
 
+enum SharedPreferencesStatus {init, loaded, update}
+
 @immutable
 class SharedPreferencesState {
+
   final List<ProviderData> providers;
   final List<ClientData> clients;
   final List<TimeslotData> timeslots;
