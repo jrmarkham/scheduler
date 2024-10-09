@@ -20,7 +20,7 @@ final ThemeData mainTheme = ThemeData(
     primary: primeColor,
     secondary: secondColor,
     tertiary: thirdColor,
-    background: backgroundColor,
+    surface: backgroundColor,
     brightness: brightness,
     // us for button text and icons
     secondaryContainer: thirdColor,
